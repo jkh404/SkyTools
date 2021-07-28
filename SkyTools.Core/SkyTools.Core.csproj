@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <PackageId>SkyTools.Core</PackageId>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Authors>HuHai</Authors>
     <Description>插件程序</Description>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
