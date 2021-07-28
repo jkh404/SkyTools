@@ -19,6 +19,10 @@
     <DocumentationFile>E:\VSProject\C#And.Net\SkyTools\SkyTools.Core\SkyTools.Core.xml</DocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>E:\VSProject\C#And.Net\SkyTools\SkyTools.Core\SkyTools.Core.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Masuit.Tools.Core" Version="2.4.3.7" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />

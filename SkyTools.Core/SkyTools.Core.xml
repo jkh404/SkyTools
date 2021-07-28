@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SkyTools.Core</name>
+    </assembly>
+    <members>
+        <member name="T:SkyTools.Core.ISkyTool">
+            <summary>
+            插件工具接口
+            </summary>
+        </member>
+        <member name="P:SkyTools.Core.ISkyTool.Name">
+            <summary>
+            插件工具名
+            </summary>
+        </member>
+        <member name="P:SkyTools.Core.ISkyTool.Info">
+            <summary>
+            插件工具简介
+            </summary>
+        </member>
+        <member name="M:SkyTools.Core.ISkyTool.DoSome(System.String,SkyTools.Core.SkyToolMain)">
+            <summary>
+            插件执行主方法
+            </summary>
+            <param name="cmdText"></param>
+            <param name="toolMain"></param>
+        </member>
+        <member name="M:SkyTools.Core.ISkyTool.Register">
+            <summary>
+            注册关键字
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SkyTools.Core.ISkyTool.Init(SkyTools.Core.SkyToolMain)">
+            <summary>
+            初始化
+            </summary>
+            <param name="toolMain"></param>
+        </member>
+        <member name="M:SkyTools.Core.ISkyTool.Stop(SkyTools.Core.SkyToolMain)">
+            <summary>
+            停止
+            </summary>
+            <param name="toolMain"></param>
+        </member>
+        <member name="F:SkyTools.Core.SkyToolMain.IsRun">
+            <summary>
+            是否运行
+            </summary>
+        </member>
+        <member name="P:SkyTools.Core.SkyToolMain.ToolsPath">
+            <summary>
+            工具插件文件夹
+            </summary>
+        </member>
+        <member name="M:SkyTools.Core.SkyToolMain.GetData``1(System.String)">
+            <summary>
+            通过名字获取数据
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+            <param name="name">数据名</param>
+            <returns>数据</returns>
+        </member>
+        <member name="M:SkyTools.Core.SkyToolMain.AddData(System.String,System.Object)">
+            <summary>
+            保存数据
+            </summary>
+            <param name="name">数据名</param>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SkyTools.Core.SkyToolMain.Start(System.String[])">
+            <summary>
+            启动插件主程序
+            </summary>
+            <param name="args">命令行参数</param>
+        </member>
+        <member name="M:SkyTools.Core.SkyToolMain.Start">
+            <summary>
+            启动插件主程序
+            </summary>
+        </member>
+        <member name="M:SkyTools.Core.SkyToolMain.DoTool(System.String)">
+            <summary>
+            执行插件操作
+            </summary>
+            <param name="inputText">命令行输入</param>
+            <returns></returns>
+        </member>
+        <member name="M:SkyTools.Core.SkyToolMain.ListeningInput">
+            <summary>
+            监听控制台输入
+            </summary>
+        </member>
+        <member name="M:SkyTools.Core.SkyToolMain.LoadMenus">
+            <summary>
+            加载菜单
+            </summary>
+        </member>
+        <member name="M:SkyTools.Core.SkyToolMain.AddMenu(System.ValueTuple{System.String,System.Action})">
+            <summary>
+            添加菜单
+            </summary>
+            <param name="menu">text:菜单文本，doSome 输入菜单编号后执行的操作</param>
+        </member>
+        <member name="M:SkyTools.Core.SkyToolMain.LoadTools">
+            <summary>
+            加载插件
+            </summary>
+        </member>
+        <member name="M:SkyTools.Core.SkyToolMain.ShowMenus">
+            <summary>
+            显示菜单
+            </summary>
+        </member>
+        <member name="M:SkyTools.Core.SkyToolMain.StopTools">
+            <summary>
+            停止插件
+            </summary>
+        </member>
+        <member name="T:SkyTools.Core.SkyToolUtil">
+            <summary>
+            SkyTool工具集
+            </summary>
+        </member>
+        <member name="M:SkyTools.Core.SkyToolUtil.IsMatch(System.String,System.String)">
+            <summary>
+            是否匹配
+            </summary>
+            <param name="dataText">参与匹配的字符串数据</param>
+            <param name="regexText">正则表达式</param>
+            <returns></returns>
+        </member>
+        <member name="M:SkyTools.Core.SkyToolUtil.IsDir(System.String)">
+            <summary>
+            字符串是否是文件夹路径
+            </summary>
+            <param name="dataText">字符串</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
