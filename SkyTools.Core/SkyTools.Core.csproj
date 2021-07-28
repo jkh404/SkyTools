@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <PackageId>SkyTools.Core</PackageId>
+    <Version>1.0.3</Version>
+    <Authors>HuHai</Authors>
+    <Description>插件程序</Description>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/jkh404/SkyTools</PackageProjectUrl>
+    <PackageTags>Tool;Tools;Sky;SkyTools;SkyTool</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Masuit.Tools.Core" Version="2.4.3.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <None Include="License.txt" Pack="true" PackagePath=""/>
+    <None Include="README.md" Pack="true" PackagePath=""/>
+  </ItemGroup>
+
+</Project>
