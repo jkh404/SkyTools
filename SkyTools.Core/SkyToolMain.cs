@@ -16,7 +16,13 @@ namespace SkyTools.Core
         private  List<(string filter, Action<string, SkyToolMain> doSome)> Regs
             = new List<(string filter, Action<string, SkyToolMain> doSome)>();
         private  List<(string text, Action doSome)> Menus = new List<(string, Action)>();
-        public bool IsRun = true;
+        /// <summary>
+        /// 是否运行
+        /// </summary>
+        public bool IsRun = false;
+        /// <summary>
+        /// 工具插件文件夹
+        /// </summary>
         public string ToolsPath { get; set; }
             = $"{AppContext.BaseDirectory}Tools\\";
         /// <summary>
@@ -66,7 +72,7 @@ namespace SkyTools.Core
         /// <param name="args">命令行参数</param>
         public void Start(string[] args)
         {
-
+            IsRun = true;
             Console.WriteLine($"当前程序目录:{AppContext.BaseDirectory}");
             if (args.Length>0)
             {
@@ -86,7 +92,7 @@ namespace SkyTools.Core
         /// </summary>
         public void Start( )
         {
-            
+            IsRun = true;
             Console.WriteLine($"当前程序目录:{AppContext.BaseDirectory}");
             if (Environment.GetCommandLineArgs().Length>0)
             {
@@ -252,6 +258,7 @@ namespace SkyTools.Core
             skyTools.ForEach(tool=> {
                 tool.Stop(this);
             });
+            IsRun = false;
         }
     }
 }

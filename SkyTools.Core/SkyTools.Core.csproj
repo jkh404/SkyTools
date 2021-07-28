@@ -10,13 +10,20 @@
     <PackageProjectUrl>https://github.com/jkh404/SkyTools</PackageProjectUrl>
     <PackageTags>Tool;Tools;Sky;SkyTools;SkyTool</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <NeutralLanguage>zh-SG</NeutralLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\VSProject\C#And.Net\SkyTools\SkyTools.Core\SkyTools.Core.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Masuit.Tools.Core" Version="2.4.3.7" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <None Include="License.txt" Pack="true" PackagePath=""/>
-    <None Include="README.md" Pack="true" PackagePath=""/>
+    <None Include="License.txt" Pack="true" PackagePath="" />
+    <None Include="README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>

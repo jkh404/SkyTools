@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SkyTools.Core" Version="1.0.0" />
+    <PackageReference Include="SkyTools.Core" Version="1.0.3" />
   </ItemGroup>
 
 </Project>
